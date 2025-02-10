@@ -158,3 +158,13 @@ np.dot([0.60, 0.42, 0.69], [[-0.3], [0.5], [-0.6]])
 sigmoid(-0.32) 
 # Resultado: 0.42  # Saída final (ainda com erro)
 ```
+
+## Cálculo do Erro
+
+```python
+erro = y - camada_saida
+```
+* O erro é a diferença entre a saída esperada (y) e a saída calculada.
+
+
+
