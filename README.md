@@ -93,13 +93,13 @@ y = np.array([[0], [1], [1], [0]])  # Problema do XOR
 
 ```python
 np.random.seed(42)  # Para garantir resultados reproduzíveis
-pesos_entrada_oculta = np.random.uniform(-1, 1, (2, 3))  # 2 entradas -> 3 neurônios ocultos
-pesos_oculta_saida = np.random.uniform(-1, 1, (3, 1))    # 3 neurônios ocultos -> 1 saída
+pesos_entrada_oculta = np.random.uniform(-1, 1, (2, 5))  # 2 entradas -> 5 neurônios ocultos
+pesos_oculta_saida = np.random.uniform(-1, 1, (5, 1))    # 3 neurônios ocultos -> 1 saída
 ```
 
 * Os pesos das conexões são inicializados aleatoriamente no intervalo [-1, 1].
-* pesos_entrada_oculta: Matriz (2x3) (2 neurônios de entrada → 3 neurônios na camada oculta)
-* pesos_oculta_saida: Matriz (3x1) (3 neurônios da camada oculta → 1 neurônio na saída)
+* pesos_entrada_oculta: Matriz (2x5) (2 neurônios de entrada → 5 neurônios na camada oculta)
+* pesos_oculta_saida: Matriz (5x1) (5 neurônios da camada oculta → 1 neurônio na saída)
 
 ## Exemplo de pesos gerados:
 
@@ -117,7 +117,7 @@ pesos_oculta_saida =
 ## 6) Definição da Taxa de Aprendizado
 
 ```python
-learning_rate = 0.5
+learning_rate = 0.3
 ```
 * Taxa de aprendizado controla o tamanho dos ajustes feitos nos pesos durante o treinamento.
 * Valores muito grandes podem fazer o treinamento divergir, e valores muito pequenos podem torná-lo muito lento.
@@ -126,9 +126,9 @@ learning_rate = 0.5
 ## 7) Loop de Treinamento
 
 ```python
-for epoch in range(10000):
+for epoch in range(20000):
 ```
-* O modelo será treinado por 10.000 iterações.
+* O modelo será treinado por 20.000 iterações.
 
 ## Forward Pass (Passagem Direta)
 
