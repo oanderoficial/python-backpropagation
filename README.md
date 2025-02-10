@@ -230,3 +230,7 @@ d_saida = erro * tanh_derivative(camada_saida)  # Gradiente da saída
 erro_oculta = d_saida.dot(pesos_oculta_saida.T)  # Propagação do erro para a camada oculta
 d_oculta = erro_oculta * tanh_derivative(camada_oculta)  # Gradiente da oculta
 ```
+
+## Saída 
+
+![image](https://github.com/user-attachments/assets/256cc567-6fc4-4479-af80-b16e1e52014e)
