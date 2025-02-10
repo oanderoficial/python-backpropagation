@@ -26,7 +26,7 @@ pesos_oculta_saida = np.random.uniform(-1, 1, (5, 1))    # 5 neurônios ocultos 
 # Taxa de aprendizado
 learning_rate = 0.3
 
-# Treinamento por 10.000 iterações
+# Treinamento por 20.000 iterações
 for epoch in range(20000):
     # Forward Pass
     camada_oculta = sigmoid(np.dot(X, pesos_entrada_oculta))  # Entrada -> Oculta
