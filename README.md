@@ -122,3 +122,10 @@ learning_rate = 0.5
 * Taxa de aprendizado controla o tamanho dos ajustes feitos nos pesos durante o treinamento.
 * Valores muito grandes podem fazer o treinamento divergir, e valores muito pequenos podem torná-lo muito lento.
 
+
+## 7) Loop de Treinamento
+
+```python
+for epoch in range(10000):
+```
+* O modelo será treinado por 10.000 iterações.
