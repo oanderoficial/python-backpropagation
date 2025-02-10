@@ -52,7 +52,7 @@ sigmoid(2)  # Resultado: 0.88 (próximo de 1)
 sigmoid(-2) # Resultado: 0.12 (próximo de 0)
 ````
 
-## Derivada da Função Sigmoid
+## 3) Derivada da Função Sigmoid
 
 ```python
 def sigmoid_derivative(x):
@@ -60,3 +60,25 @@ def sigmoid_derivative(x):
 ```
 * A derivada da função sigmoid é usada no backpropagation para calcular os ajustes necessários nos pesos.
 * A fórmula vem da regra da derivação da função sigmoide.
+
+## Exemplo 
+
+```bash
+x = sigmoid(2)  # 0.88
+sigmoid_derivative(x)  # 0.105 (menor quando x está próximo de 0 ou 1)
+```
+
+## 4) Criando os Dados de Entrada (X) e Saída (y)
+
+```python
+X = np.array([[0, 0],
+              [0, 1],
+              [1, 0],
+              [1, 1]])
+
+y = np.array([[0], [1], [1], [0]])  # Problema do XOR
+```
+
+* X é a matriz de entrada com 4 exemplos (linhas) e 2 características (colunas).
+* y é a saída esperada, baseada na tabela verdade do XOR.
+
