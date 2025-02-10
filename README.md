@@ -4,6 +4,9 @@ Exemplo básico de backpropagation em Python usando NumPy
 
 * Usando backpropagation para treinar uma rede neural simples a resolver o problema XOR. A rede aprende ajustando os pesos automaticamente com base no erro.
 
+## Funções de ativação: Sigmóide vs Tanh
+
+![image](https://github.com/user-attachments/assets/49d9be2f-8c1f-4614-b8d7-d325d8b976a6)
 
 ## O problema XOR
 ![image](https://github.com/user-attachments/assets/9863ebb3-07ba-43a8-90d5-104701d08365)
