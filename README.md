@@ -205,3 +205,28 @@ if epoch % 1000 == 0:
 
 ![image](https://github.com/user-attachments/assets/90bfff9e-2071-4242-a268-4c8aaf836074)
 
+## Usando a função de ativação Tanh
+
+```python
+# Função de ativação tanh e sua derivada
+def tanh(x):
+    return np.tanh(x)
+
+def tanh_derivative(x):
+    return 1 - x**2
+```
+
+## Forward Pass 
+
+```python
+camada_oculta = tanh(np.dot(X, pesos_entrada_oculta))  # Entrada -> Oculta
+camada_saida = tanh(np.dot(camada_oculta, pesos_oculta_saida))  # Oculta -> Saída
+```
+
+## Backpropagation
+
+```python
+d_saida = erro * tanh_derivative(camada_saida)  # Gradiente da saída
+erro_oculta = d_saida.dot(pesos_oculta_saida.T)  # Propagação do erro para a camada oculta
+d_oculta = erro_oculta * tanh_derivative(camada_oculta)  # Gradiente da oculta
+```
