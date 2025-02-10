@@ -100,3 +100,25 @@ pesos_oculta_saida = np.random.uniform(-1, 1, (3, 1))    # 3 neurônios ocultos 
 * Os pesos das conexões são inicializados aleatoriamente no intervalo [-1, 1].
 * pesos_entrada_oculta: Matriz (2x3) (2 neurônios de entrada → 3 neurônios na camada oculta)
 * pesos_oculta_saida: Matriz (3x1) (3 neurônios da camada oculta → 1 neurônio na saída)
+
+## Exemplo de pesos gerados:
+
+```bash
+pesos_entrada_oculta =
+[[-0.25, 0.45, -0.12],
+ [0.78, -0.56, 0.34]]
+
+pesos_oculta_saida =
+[[-0.68],
+ [0.22],
+ [-0.89]]
+```
+
+## 6) Definição da Taxa de Aprendizado
+
+```python
+learning_rate = 0.5
+```
+* Taxa de aprendizado controla o tamanho dos ajustes feitos nos pesos durante o treinamento.
+* Valores muito grandes podem fazer o treinamento divergir, e valores muito pequenos podem torná-lo muito lento.
+
