@@ -10,6 +10,16 @@ Exemplo básico de backpropagation em Python usando NumPy
 
 O problema de XOR (ou OU exclusivo) é um problema clássico em redes neurais e aprendizado de máquina. Ele se refere à tentativa de treinar um perceptron (um modelo de rede neural simples) para aprender a função XOR.
 
+## Tabela 
+
+![image](https://github.com/user-attachments/assets/0e25d1ba-0417-42eb-bce0-b72253e1757c)
+
+
+## A lógica do XOR é simples:
+
+* Retorna 1 se apenas uma das entradas for 1.
+* Retorna 0 caso contrário.
+
 ## Passos 
 
 1) Inicializa os pesos e os dados de entrada.
