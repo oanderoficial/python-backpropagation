@@ -94,7 +94,7 @@ y = np.array([[0], [1], [1], [0]])  # Problema do XOR
 ```python
 np.random.seed(42)  # Para garantir resultados reproduzíveis
 pesos_entrada_oculta = np.random.uniform(-1, 1, (2, 5))  # 2 entradas -> 5 neurônios ocultos
-pesos_oculta_saida = np.random.uniform(-1, 1, (5, 1))    # 3 neurônios ocultos -> 1 saída
+pesos_oculta_saida = np.random.uniform(-1, 1, (5, 1))    # 5 neurônios ocultos -> 1 saída
 ```
 
 * Os pesos das conexões são inicializados aleatoriamente no intervalo [-1, 1].
