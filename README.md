@@ -187,3 +187,15 @@ pesos_entrada_oculta += X.T.dot(d_oculta) * learning_rate
 
 * Os pesos são atualizados com base nos gradientes calculados.
 * Multiplicação matricial garante que todas as conexões sejam ajustadas corretamente.
+
+## Monitoramento do Erro
+
+```python
+if epoch % 1000 == 0:
+    print(f"Erro na época {epoch}: {np.mean(np.abs(erro)):.4f}")
+```
+
+* A cada 1000 épocas, o erro médio absoluto é impresso.
+* Isso permite verificar se o modelo está aprendendo corretamente.
+
+
