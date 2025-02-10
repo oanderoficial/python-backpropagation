@@ -96,3 +96,7 @@ np.random.seed(42)  # Para garantir resultados reproduzíveis
 pesos_entrada_oculta = np.random.uniform(-1, 1, (2, 3))  # 2 entradas -> 3 neurônios ocultos
 pesos_oculta_saida = np.random.uniform(-1, 1, (3, 1))    # 3 neurônios ocultos -> 1 saída
 ```
+
+* Os pesos das conexões são inicializados aleatoriamente no intervalo [-1, 1].
+* pesos_entrada_oculta: Matriz (2x3) (2 neurônios de entrada → 3 neurônios na camada oculta)
+* pesos_oculta_saida: Matriz (3x1) (3 neurônios da camada oculta → 1 neurônio na saída)
