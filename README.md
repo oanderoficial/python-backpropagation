@@ -167,4 +167,14 @@ erro = y - camada_saida
 * O erro é a diferença entre a saída esperada (y) e a saída calculada.
 
 
+## Backward Pass (Backpropagation)
+
+```python
+d_saida = erro * sigmoid_derivative(camada_saida)  # Gradiente da saída
+erro_oculta = d_saida.dot(pesos_oculta_saida.T)  # Propagação do erro para a camada oculta
+d_oculta = erro_oculta * sigmoid_derivative(camada_oculta)  # Gradiente da camada oculta
+```
+* Gradiente da saída: Calculamos quanto a saída precisa mudar.
+* Erro da camada oculta: Multiplicamos o erro da saída pelos pesos da camada oculta.
+* Gradiente da camada oculta: Calculamos quanto os neurônios ocultos devem ser ajustados.
 
