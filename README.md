@@ -140,3 +140,21 @@ camada_saida = sigmoid(np.dot(camada_oculta, pesos_oculta_saida))  # Oculta -> S
 * np.dot(X, pesos_entrada_oculta): Multiplicação de matriz das entradas com os pesos da camada oculta.
 * np.dot(camada_oculta, pesos_oculta_saida): Multiplicação de matriz dos neurônios ocultos com os pesos da saída.
 * As ativações são passadas pela função sigmoide.
+
+## Exemplo de Forward Pass: 
+
+* Suponha que X = [0, 1] e que os pesos iniciais sejam aleatórios.
+
+```python
+np.dot([0, 1], [[-0.5, 0.2, 0.7], [0.4, -0.3, 0.8]])
+# Resultado: [0.4, -0.3, 0.8]  # Sinais da camada oculta
+
+sigmoid([0.4, -0.3, 0.8]) 
+# Resultado: [0.60, 0.42, 0.69]  # Ativação dos neurônios ocultos
+
+np.dot([0.60, 0.42, 0.69], [[-0.3], [0.5], [-0.6]])
+# Resultado: [-0.32]  # Sinal da camada de saída
+
+sigmoid(-0.32) 
+# Resultado: 0.42  # Saída final (ainda com erro)
+```
