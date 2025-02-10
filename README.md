@@ -103,7 +103,7 @@ pesos_oculta_saida = np.random.uniform(-1, 1, (3, 1))    # 3 neurônios ocultos 
 
 ## Exemplo de pesos gerados:
 
-```bash
+```python
 pesos_entrada_oculta =
 [[-0.25, 0.45, -0.12],
  [0.78, -0.56, 0.34]]
@@ -178,3 +178,12 @@ d_oculta = erro_oculta * sigmoid_derivative(camada_oculta)  # Gradiente da camad
 * Erro da camada oculta: Multiplicamos o erro da saída pelos pesos da camada oculta.
 * Gradiente da camada oculta: Calculamos quanto os neurônios ocultos devem ser ajustados.
 
+## Atualização dos Pesos
+
+```python
+pesos_oculta_saida += camada_oculta.T.dot(d_saida) * learning_rate
+pesos_entrada_oculta += X.T.dot(d_oculta) * learning_rate
+```
+
+* Os pesos são atualizados com base nos gradientes calculados.
+* Multiplicação matricial garante que todas as conexões sejam ajustadas corretamente.
