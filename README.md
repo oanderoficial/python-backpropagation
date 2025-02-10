@@ -82,3 +82,17 @@ y = np.array([[0], [1], [1], [0]])  # Problema do XOR
 * X é a matriz de entrada com 4 exemplos (linhas) e 2 características (colunas).
 * y é a saída esperada, baseada na tabela verdade do XOR.
 
+## Interpretação:
+
+* A entrada (0,0) deve produzir saída 0
+* A entrada (0,1) deve produzir saída 1
+* A entrada (1,0) deve produzir saída 1
+* A entrada (1,1) deve produzir saída 0 (operação XOR)
+
+## 5) Inicialização dos Pesos
+
+```python
+np.random.seed(42)  # Para garantir resultados reproduzíveis
+pesos_entrada_oculta = np.random.uniform(-1, 1, (2, 3))  # 2 entradas -> 3 neurônios ocultos
+pesos_oculta_saida = np.random.uniform(-1, 1, (3, 1))    # 3 neurônios ocultos -> 1 saída
+```
