@@ -1,0 +1,15 @@
+Usando backpropagation para treinar uma rede neural simples a resolver o problema XOR. A rede aprende ajustando os pesos automaticamente com base no erro.
+
+O problema de XOR (ou OU exclusivo) é um problema clássico em redes neurais e aprendizado de máquina. Ele se refere à tentativa de treinar um perceptron (um modelo de rede neural simples) para aprender a função XOR.
+
+A lógica do XOR é simples:
+Retorna 1 se apenas uma das entradas for 1.
+Retorna 0 caso contrário.
+
+Funções de ativação testados: Sigmóide vs Tanh
+
+Com a função Sigmóide o erro foi reduzido para (0.0199)
+Com a função hiperbólica tangente o erro foi reduzido drasticamente (~0.0019)
+
+2 entradas -> 5 neurônios ocultos
+5 neurônios ocultos -> 1 saída
