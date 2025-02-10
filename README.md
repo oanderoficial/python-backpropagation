@@ -201,4 +201,7 @@ if epoch % 1000 == 0:
 * A cada 1000 épocas, o erro médio absoluto é impresso.
 * Isso permite verificar se o modelo está aprendendo corretamente.
 
+## Saída
+
+![image](https://github.com/user-attachments/assets/90bfff9e-2071-4242-a268-4c8aaf836074)
 
