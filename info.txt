@@ -6,9 +6,9 @@ A lógica do XOR é simples:
 Retorna 1 se apenas uma das entradas for 1.
 Retorna 0 caso contrário.
 
-Funções de ativação testados: Sigmóide vs Tanh
+Funções de ativação testados: Sigmoide vs Tanh
 
-Com a função Sigmóide o erro foi reduzido para (0.0199)
+Com a função Sigmoide o erro foi reduzido para (0.0199)
 Com a função hiperbólica tangente o erro foi reduzido drasticamente (~0.0019)
 
 2 entradas -> 5 neurônios ocultos
