@@ -129,3 +129,14 @@ learning_rate = 0.5
 for epoch in range(10000):
 ```
 * O modelo será treinado por 10.000 iterações.
+
+## Forward Pass (Passagem Direta)
+
+```python
+camada_oculta = sigmoid(np.dot(X, pesos_entrada_oculta))  # Entrada -> Oculta
+camada_saida = sigmoid(np.dot(camada_oculta, pesos_oculta_saida))  # Oculta -> Saída
+```
+
+* np.dot(X, pesos_entrada_oculta): Multiplicação de matriz das entradas com os pesos da camada oculta.
+* np.dot(camada_oculta, pesos_oculta_saida): Multiplicação de matriz dos neurônios ocultos com os pesos da saída.
+* As ativações são passadas pela função sigmoide.
