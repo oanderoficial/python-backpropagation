@@ -259,3 +259,34 @@ X = np.array([[0, 0],
 
 y = np.array([[0], [1], [1], [0]], dtype=np.float32)  # XOR
 ```
+
+## Construção do modelo com Keras
+
+```python
+model = Sequential([
+    Dense(4, input_dim=2, activation='tanh'),  # Camada oculta com 4 neurônios
+    Dense(1, activation='sigmoid')  # Camada de saída com 1 neurônio
+])
+```
+
+## Compilação do modelo
+
+```python
+model.compile(optimizer='adam',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+```
+
+## Treinamento do modelo
+
+```python
+model.fit(X, y, epochs=1000, verbose=0)  # Treina por 1000 épocas
+```
+
+## Testando o modelo treinado
+
+```python
+print("\nSaídas previstas pelo modelo após treinamento:")
+predictions = model.predict(X)
+print(np.round(predictions))  # Arredondamos para 0 ou 1
+```
