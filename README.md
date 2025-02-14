@@ -234,3 +234,28 @@ d_oculta = erro_oculta * tanh_derivative(camada_oculta)  # Gradiente da oculta
 ## Saída 
 
 ![image](https://github.com/user-attachments/assets/256cc567-6fc4-4479-af80-b16e1e52014e)
+
+
+## Usando tensorflow / keras
+
+* <strong> Bibliotecas </strong>
+<br>
+
+```python
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+```
+
+## Definição dos dados de entrada (X) e saída esperada (y)
+
+```python
+X = np.array([[0, 0],
+              [0, 1],
+              [1, 0],
+              [1, 1]], dtype=np.float32)
+
+y = np.array([[0], [1], [1], [0]], dtype=np.float32)  # XOR
+```
