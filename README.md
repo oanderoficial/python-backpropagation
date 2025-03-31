@@ -298,6 +298,5 @@ print(np.round(predictions))  # Arredondamos para 0 ou 1
 
 ## Referências 
 
-
-
+<strong>Livro: Redes Neurais Artificiais Para Engenharia e Ciências Aplicadas. Fundamentos Teóricos e Aspectos Práticos </strong>
 
