@@ -296,3 +296,8 @@ print(np.round(predictions))  # Arredondamos para 0 ou 1
 ![image](https://github.com/user-attachments/assets/867befcf-edb9-4140-8371-4e7c4dfc5e2e)
 
 
+## Referências 
+
+
+
+
